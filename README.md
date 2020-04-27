@@ -36,7 +36,7 @@ __Windows__
 .\mvnw.cmd clean package
 ```
 
-Para rodar:
+Para executar:
 
 > Você pode utilizar o [`docker-compose.yaml`](./docker-compose.yaml) para
 subir um Kafka em sua máquina
