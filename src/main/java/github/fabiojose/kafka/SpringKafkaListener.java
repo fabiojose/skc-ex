@@ -9,21 +9,18 @@ import org.springframework.stereotype.Component;
  * @author fabiojose
  */
 @Component
-public class SpringKafkaListenter {
+public class SpringKafkaListener {
 
     @KafkaListener(topics = "topico")
     public void consume(@Payload String valor, Acknowledgment ack) {
 
-        try {
+        System.out.println("Valor do registro: " + valor);
 
-            System.out.println("Valor do registro: " + valor);
+        // TODO Processar valor do registro
+        // ...
 
-            // Processar valor do registro
+        // Commmit manual, que também será síncrono
+        ack.acknowledge();
 
-        }finally {
-
-            // Commmit manual, que também será síncrono
-            ack.acknowledge(); 
-        }
     }
 }
