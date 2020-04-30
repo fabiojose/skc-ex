@@ -8,16 +8,6 @@ Exemplo de consumer com Spring Kafka
 - Acesso ao repositório https://repo.maven.apache.org/maven2/ ou uma 
 alternativa com acesso às dependências presentes no `pom.xml`
 
-## Configurações
-
-Não se preocupe, pois apesar de existirem atalhos pelas variávies
-de ambiente, você pode utilizar tranquilamente aquilo que o Spring Boot
-oferece. Então veja todos as propriedades no 
-[application.properties](./src/main/resources/application.properties)
-
-No caso do Kafka, utilizamos Spring Kafka, então você utilizar 
-o modo Spring para configurações.
-
 ## Build & Run
 
 ### Maven
